@@ -195,32 +195,13 @@
     </div>
 </section>
 
-    <!-- 📊 CONTADOR DE VISITAS GLOBAL -->
-<div id="contador" style="text-align:center; margin-top:30px; font-size:20px; color:#ffcc00;">
-    Carregando visitas...
-</div>
-
-<script>
-    fetch("https://api.countapi.xyz/hit/afonsopinto-photography/natal")
-        .then(res => res.json())
-        .then(data => {
-            document.getElementById("contador").innerHTML =
-                "👀 Visualizações do site: <b>" + data.value + "</b>";
-        })
-        .catch(() => {
-            document.getElementById("contador").innerHTML =
-                "Não foi possível carregar o contador.";
-        });
-</script>
-
-    
 <footer>
     © 2025 Afonso Pinto Photography — Todos os direitos reservados
 </footer>
 
     <script>
     function atualizarContagem() {
-        const destino = new Date("December 1, 2025 19:00:00").getTime();
+        const destino = new Date("December 1, 2025 15:00:00").getTime();
         const agora = new Date().getTime();
         const diferenca = destino - agora;
 
